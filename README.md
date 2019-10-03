@@ -33,7 +33,7 @@ name
  +--test
  |  +--include
  |  +--src
- |  |  +--Main.c
+ |  |  +--main.c
  |  | 
  |  +--CMakeLists.txt
  |
@@ -52,7 +52,7 @@ This creates a the following structure where `name` is the project name:
 name
  +--include
  +--src
- |  +--Main.c
+ |  +--main.c
  | 
  +--CMakeLists.txt
 ```

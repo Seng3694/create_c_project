@@ -6,7 +6,7 @@ set(HEADER_FILES
 )
 
 set(SOURCE_FILES
-    src/Main.c
+    src/main.c
 )
 
 include_directories(include)

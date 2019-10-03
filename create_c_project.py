@@ -11,7 +11,7 @@ set(HEADER_FILES
 )
 
 set(SOURCE_FILES
-    src/Main.c
+    src/main.c
 )
 
 include_directories(include)
@@ -52,7 +52,7 @@ cmake_library_test_file = """set(HEADER_FILES
 )
 
 set(SOURCE_FILES
-    src/Main.c
+    src/main.c
 )
 
 include_directories(include)
@@ -165,7 +165,7 @@ def create_lib_project(name, cmake):
     #  |-test
     #  | |-include
     #  | |-src
-    #  | | |-Main.c
+    #  | | |-main.c
     #  | | 
     #  | |-CMakeLists.txt
     #  |
@@ -215,7 +215,7 @@ def create_lib_project(name, cmake):
 
     os.chdir("src")
     content = library_test_source_file.replace("<PROJECT_NAME>", name)
-    f = open("Main.c", "w")
+    f = open("main.c", "w")
     f.write(content)
     f.close()
 
@@ -226,7 +226,7 @@ def create_executable_project(name, cmake):
     #  name
     #  |-include
     #  |-src
-    #  | |-Main.c
+    #  | |-main.c
     #  | 
     #  |-CMakeLists.txt
 
@@ -242,7 +242,7 @@ def create_executable_project(name, cmake):
 
     os.chdir("src")
     content = executable_source_file.replace("<PROJECT_NAME>", name)
-    f = open("Main.c", "w")
+    f = open("main.c", "w")
     f.write(content)
     f.close()
     os.chdir("../..")
