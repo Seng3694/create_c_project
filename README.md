@@ -7,7 +7,7 @@ Creates a CMake project structure for a C project. A script i've been using for 
 |----------|-------|----------------------------------------------------------------------------|
 | --name   | -n    | The name of the project. (e.g.: "my_project")                              |
 | --cmake  | -c    | The CMake version to use. (e.g.: "2.8")                                    |
-| --lib    | -l    | Optional argument for building a library project instead of an exectuable. |
+| --lib    |       | Optional argument for building a library project instead of an exectuable. |
 | --help   | -h    | Prints help text.                                                          |
 
 ## Example for a libary project ##
